@@ -1,0 +1,206 @@
+{
+    "Actor": {
+        "types":[
+            "personnage"
+        ],
+        "templates":{
+            "perso":{
+                "prenom":"",
+                "espece":"",
+                "age":"",
+                "sexe":"",
+                "profession":"",
+                "avantage":"",
+                "desavantage":"",
+                "XP":0,
+                "PV": {
+                    "value": 0,
+                    "max": 0
+                },
+                "PM": {
+                    "value": 0,
+                    "max": 0
+                },
+                "AE": {
+                    "value": 0,
+                    "max": 0
+                },
+                "stat": {
+                    "vigueur":{
+                        "base":0,
+                        "bonus":0
+                    },
+                    "coordination":{
+                        "base":0,
+                        "bonus":0
+                    },
+                    "logique":{
+                        "base":0,
+                        "bonus":0
+                    },
+                    "instinct":{
+                        "base":0,
+                        "bonus":0
+                    },
+                    "empathie":{
+                        "base":0,
+                        "bonus":0
+                    },
+                    "pouvoir":{
+                        "base":0,
+                        "bonus":0
+                    }
+                },
+                "competence":{
+                    "artisanat":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"athletisme":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"baratin":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"blocage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"canalisation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"canotage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"combat":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"commandement":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"concentration":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"conduite":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"diplomatie":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"discretion":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"dressage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"echo":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"endurance":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"equitation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"escamotage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"esquive":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"informatique":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"ingenierie":{
+                        "base":0,
+                        "bonus":0
+                    },"marchandage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"medecine":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"melee":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"navigation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"parade":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"perception":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"pilotage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"representation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"savoir":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"survie":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"tir":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"traque":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    }
+                }
+
+            }
+        },
+        "personnage":{
+            "templates":["perso"]
+        }
+
+    },
+    "Item": {
+        "types": [
+            "objet",
+            "magie"
+        ],
+        "objet": {
+            "description": "",
+            "valeur":10,
+            "quantite":1
+        },
+        "magie": {
+            "description": ""
+        }
+    }
+}

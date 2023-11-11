@@ -1,0 +1,106 @@
+<form class="{{cssClass}} jr" autocomplete="off">
+    <div class="identity">
+        <div class="col2">
+            <span>Nom <input name="name" type="text" value="{{actor.name}}"/></span>
+            <span>Prenom <input name="system.prenom" type="text" value="{{actor.system.prenom}}"></span>
+            <span>Espece <input name="system.espece" type="text" value="{{actor.system.espece}}"></span>
+            <span>Age <input name="system.age" type="text" value="{{actor.system.age}}"></span>
+        </div>
+        <div class="col2">
+            <span>Sexe <input name="system.sexe" type="text" value="{{actor.system.sexe}}"></span>
+            <span>Profession <input name="system.profession" type="text" value="{{actor.system.profession}}"></span>
+            <span>Avantage <input name="system.avantage" type="text" value="{{actor.system.avantage}}"></span>
+            <span>Desavantage <input name="system.desavantage" type="text" value="{{actor.system.desavantage}}"></span>
+        </div>
+
+    </div>
+	<img class="avatar" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+	<div class="nub">
+        <div class="stat"><span>XP </span><input name="system.xp" type="text" value="{{actor.system.xp}}"></div>
+        <div class="stat"><span>PV  </span><input name="system.PV.value" type="text" value="{{actor.system.PV.value}}"> - <input name="system.PV.max" type="text" value="{{actor.system.PV.max}}"></div>
+        <div class="stat"><span>PM </span><input name="system.PM.value" type="text" value="{{actor.system.PM.value}}"> - <input name="system.PM.max" type="text" value="{{actor.system.PM.max}}"></div>
+        <div class="stat"><span>AE </span><input name="system.AE.value" type="text" value="{{actor.system.AE.value}}"> - <input name="system.AE.max" type="text" value="{{actor.system.AE.max}}"></div>
+    </div>
+    <div class="stats">
+        <h2>Stat</h2>
+        {{#each actor.system.stat as |value stat|}}
+              <div class="stat"><span class="dice" data-name="{{stat}}" data-base="{{value.base}}" data-bonus="{{value.bonus}}">{{localize stat}}</span><input class="base" type="text" name="system.stat.{{stat}}.base" value="{{value.base}}"> <input class="bonus" type="text" name="system.stat.{{stat}}.bonus" value="{{value.bonus}}"> <input class="total" type="text" value=""></div>
+        {{/each}}
+    </div>
+    <div class="compts">
+        <h2>compétences</h2>
+        <div class="colonne">
+        {{#each actor.system.competence as |value stat|}}
+              <div class="stat"><span class="dice" data-name="{{stat}}" data-base="{{value.base}}" data-bonus="{{value.bonus}}" data-stat="{{value.stat}}">{{localize stat}}</span>
+                <select class="statl"  name="system.competence.{{stat}}.stat">
+                    {{#select value.stat}}
+                        <option value="vigueur" >vigueur</option>
+                        <option value="coordination" >coordination</option>
+                        <option value="logique" >logique</option>
+                        <option value="instinct" >instinct</option>
+                        <option value="empathie" >empathie</option>
+                        <option value="pouvoir" >pouvoir</option>
+                    {{/select}}
+                </select>
+                <input class="base" type="text" name="system.competence.{{stat}}.base" value="{{value.base}}"> <input class="bonus" type="text" name="system.competence.{{stat}}.bonus" value="{{value.bonus}}"><input class="total" type="text" value=""></div>
+        {{/each}}
+        </div>
+    </div>
+    <div class="list">
+	<h2>inventaire</h2>
+    	<ul class="items-list">
+    		<li class="item fexrow">
+    			<div class="item-image"></div>
+    			<div class="item-qty"></div>
+                <div class="item-name">Nom</div>
+                <div class="item-description">Description</div>
+                <div class="item-valeur">Valeur</div>	
+                
+                <div class="item-controls"></div> 			                     
+            </li>
+            <div class="colonne">
+    		{{#each actor.inventaire as |item id|}}
+        		<li class="item fexrow objets active draggable" data-item-id="{{item._id}}">
+        			<div class="item-image"><img src="{{item.img}}" title="{{item.system.description}}"/></div>
+        			<div class="item-qty">{{item.system.quantite}}</div>
+                    <div class="item-name" title="{{item.name}}">{{item.name}}</div>
+                    <div class="item-description"><span>{{item.system.description}}</span></div>                    
+                    <div class="item-valeur"  style="display: none;">{{item.system.valeur}}</div>	
+                    
+                    <div class="item-controls">				                    	
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+                    			                     
+                </li>
+        	{{/each}}
+            </div>
+        </ul>
+    </div>
+    <div class="list">
+        <h2>Magie</h2>
+        <ul class="items-list">
+        	<li class="item fexrow">
+    			<div class="item-image"></div>
+    			<div class="item-name">Nom</div>
+                <div class="item-description">Description</span></div>
+                <div class="item-controls"></div> 			                     
+            </li>
+            <div class="colonne">
+        	{{#each actor.sort as |item id|}}
+            
+        		<li class="item fexrow" data-item-id="{{item._id}}" data-name="item">
+        			<div class="item-image"><img src="{{item.img}}" title="{{item.system.description}}"/></div>
+        			<div class="item-name" title="{{item.name}}" style="height: 30px;">{{item.name}}</div>
+                    <div class="item-description"><span >{{item.system.description}}</span></div>
+                    <div class="item-controls">
+                        <a class="item-control item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+                        <a class="item-control item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+                    </div>
+    	                     
+                </li>
+        	{{/each}}
+            </div>
+    	</ul>
+    </div>
+</form>
