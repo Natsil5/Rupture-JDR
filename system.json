@@ -18,8 +18,7 @@
     "esmodules": ["module/rupture.js"],
     "styles": ["css/rupture.css"],
     "scripts": [],
-    "packs": [
-    ],
+    "packs": [],
     "background": "",
     "languages": [],
     "gridDistance": 1,
