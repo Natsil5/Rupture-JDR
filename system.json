@@ -26,7 +26,7 @@
     "primaryTokenAttribute": "PV",
     "secondaryTokenAttribute": "PM",
     "url": "https://github.com/Natsil5/Rupture-JDR",
-    "manifest": "https://raw.githubusercontent.com/Natsil5/Rupture-JDR/master/system.json",
+    "manifest": "https://raw.githubusercontent.com/Natsil5/Rupture-JDR/master/system.json?token=GHSAT0AAAAAACKFXWW6ZSESI3VVPUNKEUKIZKT2B5Q",
     "download": "https://github.com/Natsil5/Rupture-JDR/archive/refs/heads/master.zip",
     "license": "LICENSE.txt"
 }
