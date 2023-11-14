@@ -11,7 +11,7 @@
     "templateVersion": 1,
     "authors": [
       {
-        "name": "Vharung",
+        "name": "Vharung,Natsil",
         "url": "https://foundryvtt.com"
       }
     ],
@@ -26,8 +26,8 @@
     "gridUnits": "m",
     "primaryTokenAttribute": "PV",
     "secondaryTokenAttribute": "PM",
-    "url": "",
-    "manifest": "",
-    "download": "",
-    "license": ""
+    "url": "https://github.com/Natsil5/Rupture-JDR",
+    "manifest": "https://raw.githubusercontent.com/Natsil5/Rupture-JDR/master/system.json",
+    "download": "https://github.com/Natsil5/Rupture-JDR/archive/refs/heads/master.zip",
+    "license": "LICENSE.txt"
 }
