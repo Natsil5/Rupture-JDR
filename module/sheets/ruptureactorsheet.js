@@ -45,8 +45,6 @@
         // Assign and return, assination des items
         actorData.inventaire = inventaire;
         actorData.sort = sort;
-        console.log(sort)
-        console.log(inventaire)
     }
 
 
@@ -77,6 +75,10 @@
             var total = baseValue + bonusValue;
             totalInput.val(total);
         });
+
+        //ajout de sous compétences
+        html.find('.add-sub-competence').click(this.addSubCompetence.bind(this));
+        html.find('.rm-sub-competence').click(this.rmSubCompetence.bind(this));
     }
 
     getItemFromEvent = (ev) => {
@@ -100,23 +102,50 @@
         let statBonus = this.actor.system.stat[stat]?.bonus || 0;
         let succes="";
         let inforesult=parseInt(base)+parseInt(bonus)+parseInt(statValue)+parseInt(statBonus);
-        let r = new Roll("1d100");
+        let r = new Roll("1d100 +"+inforesult);
         let roll=r.evaluate({"async": false});
         let retour=r.result; 
-        if(retour<5){
-            succes="<h4 class='result' style='background:#ff3333;text-align: center;color: #fff;padding: 5px;border: 1px solid #999;'>Echec critique</h4>";
-        }else if(retour>95){
-            succes="<h4 class='result' style='background:#7dff33;text-align: center;color: #fff;padding: 5px;border: 1px solid #999;'>Réussite critique</h4>";
-        }else if(retour>=inforesult){
-            succes="<h4 class='result' style='background:#78be50;text-align: center;color: #fff;padding: 5px;border: 1px solid #999;'>Réussite</h4>";
-        }else{
-            succes="<h4 class='result' style='background:#ff5733;text-align: center;color: #fff;padding: 5px;border: 1px solid #999;'>Echec</h4>";
-        }
-        let texte = '<span style="flex:auto"><p class="resultatp">Jet de ' + name + " : " + inforesult +'/100</p>'+succes+'</span>'
+        
+        let texte = '<span style="flex:auto"><p class="resultatp">Jet de ' + name + " : 1d100 +" + inforesult +'</p></span>'
         roll.toMessage({
             speaker: ChatMessage.getSpeaker({ actor: this }),
             flavor: texte
         });
+
+    }
+
+    addSubCompetence(event) {
+        let id = event.target.dataset["id"];
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let randomId = '';
+        for (let i = 0; i < 10; i++) {
+            const randomIndex = Math.floor(Math.random() * characters.length);
+            randomId += characters.charAt(randomIndex);
+        }
+        let sousCompetences = {
+            [`subcompt-${randomId}`]: [{'name':'','stat':'', 'base':'', 'bonus':''}]
+        };
+        //ajout de la sous compétence avec possibilité de supprimer
+        let nouvelleSousCompetence = {};
+        Object.keys(sousCompetences).forEach((competence) => {
+            nouvelleSousCompetence[competence] = sousCompetences[competence];
+        });
+        // Mettre à jour l'acteur
+        this.actor.update({[`system.competence.${id}.sousCompetences`]: nouvelleSousCompetence});
+
+    }
+    rmSubCompetence(event) {
+        let id = event.target.dataset["id"];
+        let idsub = event.target.dataset["idsub"];
+        let sousComp = { ...this.actor.system.competence[id].sousCompetences };
+
+        // Find and remove the sub-competence by ID
+        delete sousComp[`${idsub}`];
+
+        // Update the actor with the new sub-competences
+        this.actor.system.competence[id].sousCompetences = sousComp;
+        this.actor.render();
+        this.actor.update({[`system.competence.${id}.sousCompetences`]: sousComp});
 
     }
 

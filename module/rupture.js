@@ -21,3 +21,7 @@ Hooks.once("init", async function() {
     Actors.registerSheet("rupture", ruptureActorSheet, { makeDefault: true });
 });
 
+
+Handlebars.registerHelper('getKeys', function(obj) {
+    return Object.keys(obj);
+});
