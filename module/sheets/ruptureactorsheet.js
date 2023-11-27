@@ -134,19 +134,13 @@
         this.actor.update({[`system.competence.${id}.sousCompetences`]: nouvelleSousCompetence});
 
     }
+
     rmSubCompetence(event) {
         let id = event.target.dataset["id"];
         let idsub = event.target.dataset["idsub"];
-        let sousComp = { ...this.actor.system.competence[id].sousCompetences };
-
-        // Find and remove the sub-competence by ID
-        delete sousComp[`${idsub}`];
-
-        // Update the actor with the new sub-competences
-        this.actor.system.competence[id].sousCompetences = sousComp;
-        this.actor.render();
-        this.actor.update({[`system.competence.${id}.sousCompetences`]: sousComp});
-
+        this.actor.update({[`system.competence.${id}.sousCompetences.-=${idsub}`]: null});
     }
+
+
 
 }
