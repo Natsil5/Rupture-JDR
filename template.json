@@ -58,6 +58,10 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
+                    },"Artefact":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
                     },"athletisme":{
                         "stat":"",
                         "base":0,
@@ -103,10 +107,6 @@
                         "base":0,
                         "bonus":0
                     },"dressage":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
-                    },"echo":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -156,10 +156,6 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"pilotage":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
                     },"representation":{
                         "stat":"",
                         "base":0,
@@ -168,7 +164,7 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"savoir":{
+                    },"Connaissance":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -177,10 +173,6 @@
                         "base":0,
                         "bonus":0
                     },"tir":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
-                    },"traque":{
                         "stat":"",
                         "base":0,
                         "bonus":0
