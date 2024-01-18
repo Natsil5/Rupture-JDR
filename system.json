@@ -2,7 +2,7 @@
     "id": "rupture",
     "title": "Rupture",
     "description": "The Rupture system for FoundryVTT !",
-    "version": "0.5",
+    "version": "0.6",
     "compatibility": {
       "minimum": "10",
       "verified": "11.299",
