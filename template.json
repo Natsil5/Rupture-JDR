@@ -54,7 +54,35 @@
                     }
                 },
                 "competence":{
-                    "artisanat":{
+                    "Archerie":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Artisanat":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes de poing":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes d'épaule":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes lourde":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes automatique":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes tranchantes":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Armes contondante":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -95,6 +123,10 @@
                         "base":0,
                         "bonus":0
                     },"conduite":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Connaissance":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -140,10 +172,6 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"melee":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
                     },"navigation":{
                         "stat":"",
                         "base":0,
@@ -161,10 +189,6 @@
                         "base":0,
                         "bonus":0
                     },"Science":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
-                    },"Connaissance":{
                         "stat":"",
                         "base":0,
                         "bonus":0
