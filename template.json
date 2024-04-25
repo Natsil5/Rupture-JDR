@@ -54,7 +54,11 @@
                     }
                 },
                 "competence":{
-                    "Archerie":{
+                    "Acrobatie":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Archerie":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -86,43 +90,39 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"Artefact":{
+                    },"Athletisme":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"athletisme":{
+                    },"Baratin":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"baratin":{
+                    },"Blocage":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"blocage":{
+                    },"Canalisation":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"canalisation":{
+                    },"Canotage":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"canotage":{
+                    },"Combat":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"combat":{
+                    },"Commandement":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"commandement":{
+                    },"Concentration":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"concentration":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
-                    },"conduite":{
+                    },"Conduite":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -130,61 +130,87 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"diplomatie":{
+                    },"Déguisement":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"discretion":{
+                    },"Diplomatie":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"dressage":{
+                    },"Discretion":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"endurance":{
+                    },"Dressage":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"equitation":{
+                    },"Endurance":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"escamotage":{
+                    },"Engramme":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"esquive":{
+                    },"Equitation":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"informatique":{
+                    },"Escamotage":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"ingenierie":{
-                        "base":0,
-                        "bonus":0
-                    },"intimidation":{
-                        "base":0,
-                        "bonus":0
-                    },"marchandage":{
+                    },"Esquive":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"navigation":{
+                    },"Extraction":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"parade":{
+                    },"Informatique":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"perception":{
+                    },"Ingenierie":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"representation":{
+                    },"Intimidation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Langue Natale":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Marchandage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Navigation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Perception":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Pilotage":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Psychologie":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Representation":{
+                        "stat":"",
+                        "base":0,
+                        "bonus":0
+                    },"Séduction":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -192,11 +218,11 @@
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"survie":{
+                    },"Survie":{
                         "stat":"",
                         "base":0,
                         "bonus":0
-                    },"tir":{
+                    },"Techmaturgie":{
                         "stat":"",
                         "base":0,
                         "bonus":0
