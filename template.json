@@ -143,14 +143,8 @@
                         "base":0,
                         "bonus":0
                     },"Ingenierie":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
+
                     },"Intimidation":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
-                    },"Langue Natale":{
                         "stat":"",
                         "base":0,
                         "bonus":0
@@ -183,9 +177,7 @@
                         "base":0,
                         "bonus":0
                     },"Science":{
-                        "stat":"",
-                        "base":0,
-                        "bonus":0
+
                     },"Survie":{
                         "stat":"",
                         "base":0,
