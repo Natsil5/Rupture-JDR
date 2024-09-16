@@ -5,11 +5,9 @@
         ],
         "templates":{
             "perso":{
-                "Prenom":"",
                 "espece":"",
                 "age":"",
                 "sexe":"",
-                "profession":"",
                 "avantage":"",
                 "desavantage":"",
                 "XP":0,
@@ -55,67 +53,67 @@
                 },
                 "competence":{
                     "Armes":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Combat naturel":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Esquive":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Canalisation":{
-                        "stat":"",
+                        "stat":"pouvoir",
                         "base":0,
                         "bonus":0
                     },"Concentration":{
-                        "stat":"",
+                        "stat":"pouvoir",
                         "base":0,
                         "bonus":0
                     },"rituel":{
-                        "stat":"",
+                        "stat":"pouvoir",
                         "base":0,
                         "bonus":0
                     },"Athlétisme":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Discrétion":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Endurance":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Natation":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Baratin":{
-                        "stat":"",
+                        "stat":"empathie",
                         "base":0,
                         "bonus":0
                     },"Commandement":{
-                        "stat":"",
+                        "stat":"pouvoir",
                         "base":0,
                         "bonus":0
                     },"Diplomatie":{
-                        "stat":"",
+                        "stat":"empathie",
                         "base":0,
                         "bonus":0
                     },"Dressage":{
-                        "stat":"",
+                        "stat":"empathie",
                         "base":0,
                         "bonus":0
                     },"Intimidation":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Marchandage":{
-                        "stat":"",
+                        "stat":"empathie",
                         "base":0,
                         "bonus":0
                     },"Représentation":{
@@ -123,71 +121,71 @@
                         "base":0,
                         "bonus":0
                     },"Séduction":{
-                        "stat":"",
+                        "stat":"pouvoir",
                         "base":0,
                         "bonus":0
                     },"Echo":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Engrammes":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Informatique":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Ingénierie":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Médecine":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Métier":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Savoir":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Survie":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Traque":{
-                        "stat":"",
+                        "stat":"instinct",
                         "base":0,
                         "bonus":0
                     },"Canotage":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Conduite":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Equitation":{
-                        "stat":"",
+                        "stat":"vigueur",
                         "base":0,
                         "bonus":0
                     },"Escamotage":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     },"Navigation":{
-                        "stat":"",
+                        "stat":"logique",
                         "base":0,
                         "bonus":0
                     },"Perception":{
-                        "stat":"",
+                        "stat":"instinct",
                         "base":0,
                         "bonus":0
                     },"Pilotage":{
-                        "stat":"",
+                        "stat":"coordination",
                         "base":0,
                         "bonus":0
                     }
