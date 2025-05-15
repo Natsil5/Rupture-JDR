@@ -11,7 +11,7 @@
                 "avantage":"",
                 "desavantage":"",
                 "XP":0,
-                "Bouclier": {
+                "barriere": {
                     "value": 0,
                     "max": 0,
                     "regene":0
