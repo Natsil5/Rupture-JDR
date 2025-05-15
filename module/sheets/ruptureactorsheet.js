@@ -102,7 +102,7 @@
         let statBonus = this.actor.system.stat[stat]?.bonus || 0;
         let succes="";
         let inforesult=parseInt(base)+parseInt(bonus)+parseInt(statValue)+parseInt(statBonus);
-        let r = new Roll("1d100 +"+inforesult);
+        let r = new Roll("((3d6)*5) +"+inforesult);
         let roll=r.evaluate({"async": false});
         let retour=r.result; 
         
