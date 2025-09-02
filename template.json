@@ -30,6 +30,16 @@
                     "value": 0,
                     "max": 0
                 },
+                "Armure": {
+                    "value": 0,
+                    "max": 0,
+                    "armprot":0
+                },
+                "Bouclier": {
+                    "value": 0,
+                    "max": 0,
+                    "armprot":0
+                },
                 "stat": {
                     "vigueur":{
                         "base":0,
