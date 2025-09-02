@@ -33,12 +33,10 @@
                 "Armure": {
                     "value": 0,
                     "max": 0,
-                    "regene":0
                 },
                 "Bouclier": {
                     "value": 0,
                     "max": 0,
-                    "regene":0
                 },
                 "stat": {
                     "vigueur":{
