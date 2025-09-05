@@ -58,5 +58,3 @@ export default class LiberCharacterData extends foundry.abstract.DataModel {
   /** @override */
     static LOCALIZATION_PREFIXES = ["liber.Character"];
 }
-
-

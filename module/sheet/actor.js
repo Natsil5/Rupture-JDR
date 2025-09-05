@@ -13,6 +13,7 @@ export default class LiberCharacterSheet extends HandlebarsApplicationMixin(Acto
     window: { resizable: true },
     dragDrop: [{ dragSelector: '[data-drag]', dropSelector: '.inventory-list' }], // Remplacer '.inventory-list' par votre sélecteur    tabGroups: { sheet: "inventory" },
     actions: {
+      editImage: LiberCharacterSheet.#onEditImage,
       edit: LiberCharacterSheet.#onItemEdit,
       delete: LiberCharacterSheet.#onItemDelete,
       roll: LiberCharacterSheet.#onRoll,
@@ -279,8 +280,7 @@ static async #onRoll(event, target) {
 
 
 
-  //#region Actions
-    /**
+/**
      * @param {PointerEvent} event - The originating click event
      * @param {HTMLElement} target - the capturing HTML element which defined a [data-action]
      */
@@ -297,7 +297,8 @@ static async #onRoll(event, target) {
     static async #onItemDelete(event, target) {
         const itemId = target.getAttribute('data-item-id');
         const item = this.actor.items.get(itemId);
-        if (item.system.quantity > 1) {
+        const type = item.type;
+        if (item.system.quantity > 1 && type !='magic') {
             await item.update({ "system.quantity": item.system.quantity - 1 });
         } else {
             item.delete();
