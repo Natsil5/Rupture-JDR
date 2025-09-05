@@ -1,0 +1,20 @@
+<div id="competence" class="tab" data-group="sheet" data-tab="competence">
+    <div class="zoneinfo">
+      {{#each systemFields.competences.fields as |field caract|}}
+      {{#if (or (eq caract "combats") (eq caract "magies") (eq caract "echos") (eq caract "physiques") (eq caract "sociales") (eq caract "techniques") (eq caract "utilitaires"))}}
+              <h2 class="titrecompe">{{localize field.label}}</h2>
+      {{else}}
+        <div class="perso {{caract}}" data-ability="{{caract}}" style="width: 46%;float: left;margin-right: 10px;">
+          <span title="{{localize field.label}}" calc="{{caract}}" data-action="roll" data-ability="{{caract}}">
+            {{localize field.label}}
+          </span>
+            {{formInput field 
+              value=(lookup ../system.competences caract) 
+              name=(concat "system.competences." caract)
+              rootId=../partId
+            }}
+        </div>
+        {{/if}}
+      {{/each}}
+    </div>
+</div>

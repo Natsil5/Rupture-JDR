@@ -1,0 +1,37 @@
+{
+  "id": "rupture",
+  "title": "Rupture Game System",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "description": "",
+  "authors": [
+    {
+      "name": "Vharung",
+      "discord": "Vharung"
+    },{
+      "name": "Natsil",
+      "discord": "natsil"
+    }],
+  "license": "MIT",
+  "scripts": [],
+  "styles": ["style/rupture.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "esmodules": ["module/rupture.js"],
+  "packs": [],
+  "url": "https://github.com/Natsil5/Rupture-JDR-v2",
+  "manifest": "https://raw.githubusercontent.com/Natsil5/Rupture-JDR-v2/refs/heads/main/system.json",
+  "download": "https://github.com/Natsil5/Rupture-JDR-v2/archive/refs/heads/main.zip",
+  "grid":{
+    "dDistance": 1,
+    "units": "m"
+  }
+}
