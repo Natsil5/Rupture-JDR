@@ -28,8 +28,8 @@
   "esmodules": ["module/rupture.js"],
   "packs": [],
   "url": "https://github.com/Natsil5/Rupture-JDR",
-  "manifest": "https://raw.githubusercontent.com/Natsil5/Rupture-JDR/refs/heads/master/system.json",
-  "download": "https://github.com/Natsil5/Rupture-JDR/archive/refs/heads/main.zip",
+  "manifest": "https://github.com/Natsil5/Rupture-JDR/refs/heads/master/system.json",
+  "download": "https://github.com/Natsil5/Rupture-JDR/archive/refs/heads/master.zip",
   "grid":{
     "dDistance": 1,
     "units": "m"
