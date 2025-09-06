@@ -28,10 +28,14 @@ export default class LiberCharacterData extends foundry.abstract.DataModel {
       emp: new fields.NumberField({ required: true, min: 20, max: 100, initial: 20 }),
       pou: new fields.NumberField({ required: true, min: 20, max: 100, initial: 20 }),
       barriere: new fields.NumberField({ required: true, min: 0, initial: 0 }),
-      magieencour: new fields.NumberField({ required: true, min: 0, initial: 0 }),
-      magiemax: new fields.NumberField({ required: true, min: 0, initial: 0 }),
-      health: new fields.NumberField({ required: true, min: 0, initial: 0 }),
-      healthmax: new fields.NumberField({ required: true, min: 0, initial: 0 }),
+      magie: new fields.SchemaField({
+        value: new fields.NumberField({ required: true, initial: 0 }),
+        max: new fields.NumberField({ required: true, initial: 0 })
+      }),
+      health: new fields.SchemaField({
+        value: new fields.NumberField({ required: true, initial: 40 }),
+        max: new fields.NumberField({ required: true, initial: 50 })
+      }),
       acc: new fields.NumberField({ required: true, min: 0, initial: 0 }),
       accmax: new fields.NumberField({ required: true, min: 0, initial: 0 }),
       regeneration: new fields.NumberField({ required: true, min: 0, initial: 0 }),
@@ -58,5 +62,6 @@ export default class LiberCharacterData extends foundry.abstract.DataModel {
   /** @override */
     static LOCALIZATION_PREFIXES = ["liber.Character"];
 }
+
 
 
