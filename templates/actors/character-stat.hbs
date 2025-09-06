@@ -36,10 +36,10 @@
 	</table>
 	<div class="tiers stats">
 		<p>Barrière : {{formInput systemFields.barriere name="system.barriere" value=system.barriere localize=true rootId=partId}}</p>
-		<p>santé : {{formInput systemFields.health name="system.health" value=system.health localize=true rootId=partId}} / {{formInput systemFields.healthmax name="system.healthmax" value=system.healthmax localize=true rootId=partId}} </p>
+		<p>Santé : {{formInput systemFields.health.fields.value name="system.health.value" value=system.health.value localize=true rootId=partId}}/{{formInput systemFields.health.fields.max name="system.health.max" value=system.health.max localize=true rootId=partId}} </p>
 	</div>
 	<div class="tiers stats">
-		<p>Magie : {{formInput systemFields.magieencour name="system.magieencour" value=system.magieencour localize=true rootId=partId}} / {{formInput systemFields.magiemax name="system.magiemax" value=system.magiemax localize=true rootId=partId}}</p>
+		<p>Magie : {{formInput systemFields.magie.fields.value name="system.magie.value" value=system.magie.value localize=true rootId=partId}}/{{formInput systemFields.magie.fields.max name="system.magie.max" value=system.magie.max localize=true rootId=partId}}</p>
 		<p>Acc: {{formInput systemFields.acc name="system.acc" value=system.acc localize=true rootId=partId}} / {{formInput systemFields.accmax name="system.accmax" value=system.accmax localize=true rootId=partId}}</p>
 	</div>
 	<div class="tiers stats">
@@ -56,4 +56,5 @@
 	</div>
 
 </div>
+
 
